@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR10 Móveis</title>
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="estilos/app.css">
+    <link rel="stylesheet" href="estilos/menu/menu.css">
+    <link rel="stylesheet" href="estilos/conteudo/conteudo.css">
+    <link rel="stylesheet" href="estilos/rodape/rodape.css">
+    <link rel="stylesheet" href="estilos/menu_lateral/menu_lateral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="app">
+    <header class="menu">
+        <button class="menu_botao" onclick="Menu.abrirMenu('menuLateral')"><i class="fas fa-ellipsis-v"></i></button>
+        <img src="imagens/logo.png" alt="Logo CR-10 Móveis " class="menu_logo">
+        <button class="menu_botao"><i class="fas fa-sign-in-alt"></i></button>
+    </header>
+    <nav class="menuLateral fechado">
+        <button class="menuLateral_botao ativo" onclick="Menu.abrirMenu('subMenu_CR10')">CR-10 Móveis</button>
+            <div class="subMenu cr10 fechado ">
+                <button class="subMenu_botao" onclick="Menu.navegar('nossaHistoria')">nossa história</button>
+                <button class="subMenu_botao" onclick="Menu.navegar('nossaMissao')">nossa missão</button>
+                <button class="subMenu_botao" onclick="Menu.navegar('nossosValores')">nossos valores</button>
+            </div>
+
+        <button class="menuLateral_botao" onclick="Menu.abrirMenu('subMenu_Servicos')">Serviços</button>
+            <div class="subMenu servicos fechado">
+                <button class="subMenu_botao" onclick="Menu.navegar('assistenciaTecnica')">Assistência técnica</button>
+                <button class="subMenu_botao" onclick="Menu.navegar('moveisPlanejados')">Móveis Planejados</button>
+                <button class="subMenu_botao" onclick="Menu.navegar('portifolio')">teste</button>
+            </div>
+
+        <button class="menuLateral_botao" onclick="Menu.abrirMenu('subMenu_Contatos')">Contatos</button>
+            <div class="subMenu contatos fechado">
+                <button class="subMenu_botao">Tel: (11) 11111-1111</button>
+                <button class="subMenu_botao">Email: alencarvini@hotmail.com</button>
+            </div>
+
+        <button class="menuLateral_botao">Siga seus serviços</button>
+    </nav>
+
+    <main class="conteudo">
+       
+        <article class="cr10">
+            <div class="lema">
+                <h1>CR-10 MÓVEIS PLANEJADOS</h1>
+                <p>McDonald's Corporation é a maior cadeia mundial de restaurantes de fast food de hambúrguer, servindo cerca de 68 milhões de clientes por dia em 119 países através de 37 mil pontos de venda.[3][4] Com sede nos Estados Unidos, a empresa começou em 1940 como uma churrascaria operada por Richard e Maurice McDonald.</p>
+            </div>
+            <div class="historia">
+                <h1 data-anime="left">HISTÓRIA</h1>
+                <p data-anime="left">Mark Elliot Zuckerberg (White Plains, 14 de maio de 1984) é um programador e empresário norte-americano, que ficou conhecido internacionalmente por ser um dos fundadores do Facebook,[4] a rede social mais acessada do mundo.[5][6] Em março de 2011, a revista Forbes colocou Zuckerberg na 36ª posição da lista das pessoas mais ricas do mundo, com uma fortuna estimada em 17,5 bilhões de dólares.[2] Em junho de 2015, sua fortuna já estava avaliada em 38,4 bilhões de dólares,[1] em 2016 seu patrimônio líquido foi estimado em 51,8 bilhões de dólares.[7]</p>
+                <br>
+                <p data-anime="bottom">Junto aos seus colegas da faculdade da Universidade de Harvard, os estudantes Eduardo Saverin, Andrew McCollum, Dustin Moskovitz e Chris Hughes, lançou o Facebook em 2004.[8][9] O Facebook expandiu-se rapidamente, com um bilhão de usuários até 2012. Zuckerberg foi envolvido em várias disputas legais que foram iniciadas por outros no grupo, que reivindicou uma participação da empresa com base na sua participação durante a fase de desenvolvimento do Facebook. </p>
+            </div>
+            <div class="missao">
+                <h1 data-anime="left">Missão</h1>
+                <div class="textoMissoes" data-anime="bottom">
+                    <div class="filtroTexto">
+                        <p>Um restaurante McDonald é operado por qualquer franqueado, filial ou pela própria corporação. A receita da McDonald's Corporation vem do aluguel, royalties e honorários pagos pelos franqueados, bem como das vendas em restaurantes operados pela empresa. Em 2012, a corporação teve uma receita anual de 27,5 bilhões de dólares e lucros de 5,5 bilhões.[6]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="valores">
+                <h1 data-anime="left">valores</h1>
+            </div>
+            <div class="fundadores">
+                <h1 data-anime="bottom">FUNDADORES DA CR-10 MÓVEIS</h1>
+                <div class="layout2">
+                    <img src="imagens/davi.png" class="perfil" data-anime="bottom">
+                    <h1 data-anime="left">cláudio ribeiro</h1>
+                    <p data-anime="left">Mark Elliot Zuckerberg (White Plains, 14 de maio de 1984) é um programador e empresário norte-americano, que ficou conhecido internacionalmente por ser um dos fundadores do Facebook,[4] a rede social mais acessada do mundo.</p>
+                </div>
+                <div class="layout1">
+                    <img src="imagens/lucas.png" class="perfil" data-anime="left">
+                    <h1 data-anime="bottom">lucas ribeiro</h1>
+                    <p data-anime="bottom">Mark Elliot Zuckerberg (White Plains, 14 de maio de 1984) é um programador e empresário norte-americano, que ficou conhecido internacionalmente por ser um dos fundadores do Facebook,[4] a rede social mais acessada do mundo.</p>
+                </div>
+                <div class="layout2">
+                    <img src="imagens/davi.png" class="perfil anime-init" data-anime="bottom">
+                    <h1 data-anime="left">davi ribeiro</h1>
+                    <p data-anime="left">Mark Elliot Zuckerberg (White Plains, 14 de maio de 1984) é um programador e empresário norte-americano, que ficou conhecido internacionalmente por ser um dos fundadores do Facebook,[4] a rede social mais acessada do mundo.</p>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape_texto">CR10 - Móveis</p>
+        <button class="rodape_botao"><a href="https://www.instagram.com/cr10moveis/"><i class="fab fa-instagram-square"></i></a></button>
+        <button class="rodape_botao"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></button>
+        <button class="rodape_botao"><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp-square"></i></a></button>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/conteudo.js"></script>
+    <script src="scripts/animacaoScroll.js"></script>
+</body>
+</html>
