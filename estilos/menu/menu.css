@@ -1,0 +1,27 @@
+.menu{
+    background-color: rgba(255, 0, 0, 0.88);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+}
+
+.menu_logo{
+    padding: 12px;
+}
+
+.menu_botao{
+    margin: 0vw 3% 0vw 3%;
+    background-color: transparent;
+    border: none;
+    align-self: stretch;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    color: black;
+    width: 10%;
+}

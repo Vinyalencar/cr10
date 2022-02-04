@@ -1,0 +1,42 @@
+/* conteudo */
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-75px,0,0)
+}
+[data-anime="bottom"]{
+    transform: translate3d(0,+75px,0)
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+/* menu lateral */
+@keyframes abrirMenu{  
+    from{
+        transform: translateX(-75vw);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fecharMenu{  
+    0%{
+        display: flex;
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-75vw);
+    }
+    100%{
+        display: flex;
+        opacity: 0;
+        height: 0;
+    }
+}

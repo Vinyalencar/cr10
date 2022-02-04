@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url('font/fontello.eot?10601319');
+    src: url('font/fontello.eot?10601319#iefix') format('embedded-opentype'),
+         url('font/fontello.woff2?10601319') format('woff2'),
+         url('font/fontello.woff?10601319') format('woff'),
+         url('font/fontello.ttf?10601319') format('truetype'),
+         url('font/fontello.svg?10601319#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.app{
+    font-family: 'Open Sans',;
+    background-color: rgba(201, 201, 201, 0.87);
+    display: grid;
+    grid-template-areas:
+        "conteudo"
+        "rodape";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+}
